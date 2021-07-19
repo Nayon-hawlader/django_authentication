@@ -28,7 +28,7 @@ def contact_form(request):
             subject = f'Message from {form.cleaned_data["name"]}'
             message = form.cleaned_data["message"]
             sender = form.cleaned_data["email"]
-            recipients = ['thekodechamp@gmail.com']
+            recipients = ['nayonhawlader.bd@gmail.com']
             try:
                 send_mail(subject, message, sender, recipients, fail_silently=True)
             except BadHeaderError:
